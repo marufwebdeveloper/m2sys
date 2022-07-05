@@ -1,0 +1,73 @@
+.snippet-add-table{
+	max-width: 1000px
+}
+
+.snippet-btn{
+  margin: 2px;
+  line-height: 25px;
+  padding: 0 5px;
+  display: inline-block;
+  font-size: 15px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  box-shadow: 0 0 3px #bbb;
+  cursor: pointer;
+}
+
+
+
+/*-----------------MODAL--------------------*/
+.c_modal {
+  display: none;
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.c_modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+.c_modal .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+.c_modal .close:hover,
+.c_modal .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.c_modal-title{
+	display:inline-block;margin:0
+}
+
+.c_modal-header{
+  padding: 10px;
+  background-color: #ddd;
+}
+.c_modal-body{
+  padding: 10px;
+}
+
+@media screen and (min-width: 961px){
+	#c_Modal_{
+		padding-left: 100px;
+	}
+}
+
+/*-----------------MODAL--------------------*/
