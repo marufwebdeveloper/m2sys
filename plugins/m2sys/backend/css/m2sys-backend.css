@@ -1,0 +1,9 @@
+[name='question-two-form-data_length']{
+	min-width: 60px;
+}
+
+#question-two-form-data th{
+	border-top: 1px solid #ddd !important;
+	border-bottom: 1px solid #ddd !important;
+	
+}
