@@ -13,8 +13,8 @@ if (isset($_POST['purpose'])) {
                 'name' => sanitize_text_field($_POST['name']),
                 'email' => sanitize_email($_POST['email']),
                 'phone' => sanitize_text_field($_POST['phone']),
-                'address' => sanitize_textarea_field($_POST['address']),
-                'gender' => sanitize_text_field($_POST['gender'])
+                'gender' => sanitize_text_field($_POST['gender']),
+                'address' => sanitize_textarea_field($_POST['address'])                
             ];
             $input_data = array(
                 'post_type' => 'question_four_data',
@@ -82,7 +82,7 @@ if (isset($_POST['purpose'])) {
             </div>
             <div class='mb-3'>
               <label for='address' class='form-label'>Address</label>
-              <textarea name='address' class='form-control' id='address' placeholder='Enter Your Address'>" . value($data, 'name') . "</textarea>
+              <textarea name='address' class='form-control' id='address' placeholder='Enter Your Address'>" . value($data, 'address') . "</textarea>
             </div>
             <div class='mb-3'>
               <label for='gender' class='form-label'>Gender</label>
