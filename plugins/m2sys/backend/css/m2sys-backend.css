@@ -1,9 +1,13 @@
-[name='question-two-form-data_length']{
-	min-width: 60px;
+[name='question-two-form-data_length'],
+[name='question-three-form-data_length'],
+[name='question-four-form-data_length']{
+    min-width: 60px;
 }
 
-#question-two-form-data th{
-	border-top: 1px solid #ddd !important;
-	border-bottom: 1px solid #ddd !important;
-	
+#question-two-form-data th,
+#question-three-form-data th,
+#question-four-form-data th{
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+
 }

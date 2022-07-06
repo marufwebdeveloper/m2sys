@@ -156,10 +156,12 @@ class M2sys {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+                
+                $this->loader->add_action( 'wp_ajax_m2sys_admin_ajax', $plugin_admin, 'ajax' );
+		$this->loader->add_action( 'wp_ajax_nopriv_m2sys_admin_ajax', $plugin_admin, 'ajax' );
 
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'admin_menus' );
-
-
+                $this->loader->add_action( 'admin_head', $plugin_admin, 'admin_head',2 );	
 	}
 
 	/**

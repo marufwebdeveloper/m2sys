@@ -124,9 +124,38 @@ class Moksy_Admin {
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
-		add_menu_page('Qquestion two','Question two data','edit_posts','menu_slug',[$this,'question_two_data'],'' );
+		add_menu_page('Qquestion two','Question two data','edit_posts','question-two',[$this,'question_two_data'],'' );
+                add_menu_page('Qquestion Three','Question Three data','edit_posts','question-three',[$this,'question_three_data'],'' );
+                add_menu_page('Qquestion Four','Question Four data','edit_posts','question-four',[$this,'question_four_data'],'' );
 
 	}
+        
+        /**
+	 * 
+	 *
+	 * @since    1.0.0
+	 */
+        public function admin_head(){
+		echo "<script>
+                    m2sys_plugin_url = '".plugin_dir_url(__DIR__)."';
+                    m2sys_admin_url = '".admin_url()."';
+		</script>";
+
+	}
+        
+        
+        /**
+	 * 
+	 *
+	 * @since    1.0.0
+	 */
+        public function ajax(){
+		if(file_exists($page = plugin_dir_path(__DIR__).'backend/inc/ajax.php'));
+		require_once $page;
+		die();
+	}
+        
+        
 
 
 	/**
@@ -136,6 +165,27 @@ class Moksy_Admin {
 	 */
 	public function question_two_data() {
 		if(file_exists($page = plugin_dir_path( __FILE__ ).'/inc/question-two/question_two_data_view.php'))
+		require_once $page;
+	}
+
+	
+	/**
+	 * 
+	 *
+	 * @since    1.0.0
+	 */
+	public function question_three_data() {
+		if(file_exists($page = plugin_dir_path( __FILE__ ).'/inc/question-three/question_three_data_view.php'))
+		require_once $page;
+	}
+        
+	/**
+	 * 
+	 *
+	 * @since    1.0.0
+	 */
+	public function question_four_data() {
+		if(file_exists($page = plugin_dir_path( __FILE__ ).'/inc/question-four/question_four_ajax_crud.php'))
 		require_once $page;
 	}
 
