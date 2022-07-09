@@ -4,7 +4,7 @@
             <button class="btn btn-primary float-end" id="new_data_create_button">New Data</button>
         </div>
     </div>
-    <div class="mt-5">
+    <div class="mt-5" style="overflow: auto">
         <table class="table table-bordered table-striped" id="question-four-form-data">
             <thead>
                 <tr>
