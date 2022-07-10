@@ -10,6 +10,10 @@
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="title" content=" M2SYS eGov Platform | Law Enforcement Management System">
+        <meta name="description" content="M2SYS eGov's Law Enforcement Management System for efficiently and effectively managing aspects of law enforcement operations.">
+        <meta name="keywords" content="law enforcement management system">
+
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
